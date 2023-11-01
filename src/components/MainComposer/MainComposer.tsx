@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 
 import ComposerEditor from '~components/ComposerEditor/ComposerEditor';
 import '../../i18n';
+import MediaInputs from '~components/MediaInputs/MediaInput';
 
 import scss from './MainComposer.module.scss';
 
@@ -24,6 +25,9 @@ function MainComposer() {
             <h2>content-bot-top</h2>
           </div>
           <div className={scss.contentBotBot}>
+            <div className={scss.contentBotBotInputMedia}>
+              <MediaInputs />
+            </div>
             <h2>content-bot-bot</h2>
             <p>{t('We have a lot of work')}</p>
           </div>
